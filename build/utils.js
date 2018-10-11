@@ -1,10 +1,11 @@
 const glob = require('glob');
 
 
-exports.entryClient = function(arrayPath) {
+const entryClient = function(arrayPath) {
     const entry = {};
-    
-    const arr = glob.sync('./src/module/**/entry-client.js');
+    const arr = glob.sync('./src/modules/**/entry-client.js');
     console.log(arr);
     
 }   
+
+entryClient()
