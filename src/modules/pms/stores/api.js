@@ -1,8 +1,6 @@
-/**
- * Created by ayou on 18/1/25.
- */
-
 import axios from 'axios'
+
+const DEV = process.env.NODE_ENV === 'dev';
 
 const baseUrl = (DEV ? '/' : 'http://localhost:8081/')
 

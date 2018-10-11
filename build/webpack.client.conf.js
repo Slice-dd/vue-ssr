@@ -22,6 +22,5 @@ module.exports = merge(baseWebpackConfig, {
     }),
     // 此插件在输出目录中
     // 生成 `vue-ssr-client-manifest.json`。
-    new VueSSRClientPlugin()
   ]
 })

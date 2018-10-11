@@ -1,6 +1,3 @@
-/**
- * Created by ayou on 18/1/25.
- */
 import { createApp } from './app'
 // 这里的 context 是服务端渲染模板时传入的
 export default context => {

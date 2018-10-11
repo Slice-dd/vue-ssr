@@ -1,7 +1,3 @@
-/**
- * Created by ayou on 18/1/25.
- */
-
 import Vue from 'vue'
 import App from './App.vue'
 import { createRouter } from './routes'
