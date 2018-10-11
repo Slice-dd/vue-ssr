@@ -1,6 +1,3 @@
-/**
- * Created by ayou on 18/1/25.
- */
 import Vue from 'vue'
 import {
   createApp

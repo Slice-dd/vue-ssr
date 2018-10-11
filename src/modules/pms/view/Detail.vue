@@ -1,7 +1,6 @@
 <!-- Item.vue -->
 <template>
   <div class="">
-    <h1>PMS</h1>
     <div>{{ item.title }}</div>
     <p>{{ item.content }}</p>
   </div>

@@ -27,7 +27,10 @@ server.use(express.static(path.join(__dirname, '/dist'), { maxAge: 2592000 * 100
 // api
 let items = { 1: {title: "item1", content: "item1 content"}}
 let id = 2
+
+
 server.get("/api/items/:id", (req, res, next) => {
+  console.log();
   res.json(items[req.params.id] || {})
 })
 

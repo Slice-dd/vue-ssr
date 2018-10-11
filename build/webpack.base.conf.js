@@ -1,23 +1,21 @@
 const path = require("path")
 const config = require('./config')
 const webpack = require('webpack')
+const utils = require('./utils.js')
 
 var env = process.env.NODE_ENV
 
 module.exports = {
-  entry: {
-    app: './src/entry-client.js'
-  },
+  entry: utils.entryClient(),
   output: {
     path: config.assetsRoot,
     publicPath: "/",
     filename: '[name].js'
   },
   resolve: {
-    // 自动补全的拓展名
     extensions: ['.js', '.vue', '.json'],
     alias: {
-      'COMPONENTS': path.resolve(__dirname, '../src/components'),
+      '@': path.resolve(__dirname, '../src'),
     }
   },
   module: {
@@ -66,5 +64,5 @@ module.exports = {
     new webpack.DefinePlugin({
       DEV: env === 'development' ? true : false
     }),
-  ]
+  ].concat(utils.html())
 }

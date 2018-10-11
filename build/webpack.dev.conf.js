@@ -16,11 +16,11 @@ module.exports = merge(baseWebpackConfig, {
   },
   devtool: '#eval-source-map',
   plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.template.html',
-      inject: true // 插入css和js
-    }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'index.html',
+    //   template: 'index.template.html',
+    //   inject: true // 插入css和js
+    // }),
     new webpack.HotModuleReplacementPlugin(),
     new FriendlyErrors()
   ]

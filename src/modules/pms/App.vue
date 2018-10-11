@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>OMS</h1>
+    <h1>PMS</h1>
     <Header></Header>
     <router-view></router-view>
   </div>
